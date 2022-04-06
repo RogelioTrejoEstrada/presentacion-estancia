@@ -1,40 +1,200 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/blood.css">
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Portada de la presentación -->
+            <section data-transition="concave" id="portada">
+                <!-- Cabecera -->
+                <img src="https://raw.githubusercontent.com/RogelioTrejoEstrada/Revealjs-presentation/main/img/logo_isei.png"
+                    alt="Logotipo UPA" style="width: auto; height: 7.5rem; position: relative; left: -23rem;">
+                <img src="https://raw.githubusercontent.com/RogelioTrejoEstrada/Revealjs-presentation/main/img/logo_upa.png"
+                    alt="Logotipo ISEI" style="width: auto; height: 7.5rem; position: relative; right: -23rem;">
+                <h3>Estancia Presentation</h3>
+                <H4>MaunaKea-Portal</H4>
+                <hr />
+                <!-- Datos generales -->
+                <p style="text-align: left; font-size: 2rem;">Name: Rogelio Trejo Estrada UP190830</p>
+                <p style="text-align: left; font-size: 2rem;">Academic Program: Ingenieria en Sistemas Estrategicos de
+                    la Información</p>
+                <p style="text-align: left; font-size: 2rem;">Internal Accessory: Daniel Torres López</p>
+                <p style="text-align: left; font-size: 2rem;">External Accessory: Eduardo Arturo Quiroz Gallegos</p>
+            </section>
+            <section>
+                <h3 style="text-align: left;">Problem Statement</h3>
+                <hr />
+                <p style="text-align: justify;">The company MaunaKea, Digital Agency; does not have a portal as a
+                    business tool for better interaction with the customer, so it will be creating the same in order to
+                    improve interaction with the customer and meet the goal of the company</p>
+                <img width="500" src="http://maunakea.mx/assets/img/Logo%20Mauna.png" alt="">
+            </section>
+            <section>
+                <h3 style="text-align: left;">Objectives/Project Scope</h3>
+                <hr />
+                <p style="text-align: left;"> <strong>Main objective</strong></p>
+                <ul>
+                    <li>Beta Version Implementation (PreBeta, Beta and PostBeta)</li>
+                </ul>
+                <p style="text-align: left;"> <strong>Secondary objectives</strong></p>
+                <ul>
+                    <li>Implementation of RESTfull Api for image uploads</li>
+                    <li>Review new code implementations for proper integration to the system (Code Review)</li>
+                    <li>Manage Server and security issues (Cloud)</li>
+                    <li>Support the development team on technical issues of the system (Technical Lead)</li>
+                    <li>Fulfill tasks assigned by the Project Leader</li>
+                </ul>
+            </section>
+            <section>
+                <h3 style="text-align: left;">Gantt Chart</h3>
+                <hr />
+                <iframe style="width: 100%;" height="550"
+                    src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+                    frameborder="0"></iframe>
+            </section>
+            <section>
+                <section>
+                    <h3 style="text-align: left;">Results</h3>
+                    <hr />
+                    <ul>
+                        <li><strong>Main Objective: Implementation of Beta Version (PreBeta, Beta and
+                                PostBeta)</strong></li>
+                    </ul>
+                    <p style="text-align: justify;">For the implementation of a beta version, it was 70% complete. With
+                        this
+                        it
+                        is added that only the implementation of the frontend functionality remains to be completed.</p>
+                </section>
+                <section>
+                    <h3 style="text-align: left;">Results</h3>
+                    <hr />
+                    <ul>
+                        <li><strong>General Objectives: Implementation of REST Api for image
+                                uploading.</strong></li>
+                    </ul>
+                    <div class="r-stack">
+                        <span class="fragment fade-out">
+                            As I can show previously the REST API meets the main
+                            features that are desired, in this case are 2 features: GET requests to bring an image and
+                            the
+                            information of the property with their respective URL's of the saved images, POST request
+                            to create a new image to assign to the property.
+                        </span>
+                        <img class="fragment" src="/img/Peticion-get-one.png" height="490">
+                        <img class="fragment" src="/img/Peticion-get-all.png" height="490">
+                        <img class="fragment" src="/img/Peticion-post-create.png" height="490">
+                    </div>
+                </section>
+                <section>
+                    <h3 style="text-align: left;">Results</h3>
+                    <hr />
+                    <ul>
+                        <li><strong>General Objectives: Review new code implementations for proper
+                                system integration (Code Review).</strong></li>
+                    </ul>
+                    <div class="r-stack">
+                        <span class="fragment fade-out">
+                            Any new implementation that is made for the project is reviewed in a pull request
+                            in our git server, this in order to avoid integration problems and that all the code
+                            remains stable for a perfect operation
+                        </span>
+                        <img class="fragment" src="/img/pull-request.png" height="490">
+                    </div>
+                </section>
+                <section>
+                    <h3 style="text-align: left;">Results</h3>
+                    <hr />
+                    <ul>
+                        <li><strong>General Objectives: Review new code implementations for proper
+                                system integration (Code Review).</strong></li>
+                    </ul>
+                    <div class="r-stack">
+                        <span class="fragment fade-out">
+                            Any problem that arose in the operation of the application deployment or services
+                            (database, API's, etc.) was solved by the server. Adding that all deployment is done in
+                            the Digital Ocean cloud so as not to complicate any operation of the same
+                            system being developed.
+                        </span>
+                        <img class="fragment" src="/img/digital-ocean.png" height="490">
+                    </div>
+                </section>
+                <section>
+                    <h3 style="text-align: left;">Results</h3>
+                    <hr />
+                    <ul>
+                        <li><strong>General Objectives: To support the development team in technical
+                                issues of the system (Technical Leader)</strong></li>
+                    </ul>
+
+                    <p>We supported the MaunaKea development team with any problem that they had, being
+                        a mentor to be able to find the problem in an easier way to implement a functionality that
+                        would be left to the coworker in an easier way. Adding that everything was made a
+                        feedback to colleagues for the proper functioning of the implementation.</p>
+                </section>
+                <section>
+                    <h3 style="text-align: left;">Results</h3>
+                    <hr />
+                    <ul>
+                        <li><strong>General Objectives: To accomplish the tasks assigned by the project
+                                leader.</strong></li>
+                    </ul>
+
+                    <p>We were able to comply with the activities assigned by the project leader, adding that
+                        they were supported in different areas of work and sections of utmost importance in order
+                        not to lose track of the projects being carried out by MaunaKea.</p>
+                </section>
+            </section>
+            <section>
+                <h3 style="text-align: left;">Conclusions</h3>
+                <hr />
+                <p>
+                    Resultados de traducción
+                    It was possible to meet most of the objectives set at the beginning of the project, but in the
+                    functionality of the
+                    portal we are 1 month behind, for which measures are already being implemented to solve it.</p>
+            </section>
+            <section>
+                <h3 style="text-align: left;">Annexes</h3>
+                <hr />
+                <ul>
+                    <li>Presentation made with Reveal.js: <a href="https://revealjs.com/">https://revealjs.com/</a></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
+        Reveal.initialize({
+            hash: true,
+            width: 1100,
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+        });
+    </script>
+    <script>
+
+    </script>
+</body>
+
 </html>
